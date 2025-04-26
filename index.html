@@ -93,9 +93,8 @@
     }
     .logo {
       position: fixed;
-      top: 5px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: -10px;
+      right: 10px;
       z-index: 10;
       height: 120px;
       width: auto;
@@ -107,6 +106,8 @@
     @media (min-width: 768px) {
       .logo {
         height: 160px;
+        right: 20px;
+        top: -15px;
       }
       .button-container {
         top: 16px;
@@ -132,11 +133,11 @@
 </head>
 <body>
   <!-- Logo -->
-  <img src="imagens/logo.png" alt="American View Logo" class="logo h-32 md:h-64">
+  <img src="../American View/imagens/logo.png" alt="American View Logo" class="logo h-32 md:h-64">
   
   <!-- Título Be Your Hero -->
-  <div class="absolute top-40 md:top-56 left-1/2 transform -translate-x-1/2 z-10 text-center">
-    <h1 class="neo-sans-title text-6xl md:text-9xl text-black whitespace-nowrap">Be Your Hero</h1>
+  <div class="absolute top-24 md:top-56 left-1/2 transform -translate-x-1/2 z-10 text-center">
+    <h1 class="neo-sans-title text-6xl md:text-9xl text-[#1D3C6F] whitespace-nowrap">BeYourHero</h1>
   </div>
 
   <!-- Botão de Entrada -->
@@ -148,7 +149,7 @@
 
   <!-- Imagem de Capa -->
   <div class="relative">
-    <img src="imagens/capa.jpg" alt="Be Your Hero" class="cover-image">
+    <img src="../American View/imagens/capa.png" alt="Be Your Hero" class="cover-image">
   </div>
 </body>
 </html> 
