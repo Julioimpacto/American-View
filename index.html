@@ -93,10 +93,10 @@
     }
     .logo {
       position: absolute;
-      top: -10px;
+      top: 10px;
       right: 10px;
       z-index: 10;
-      height: 120px;
+      height: 80px;
       width: auto;
     }
     .button-container {
@@ -119,6 +119,11 @@
       }
     }
     @media (max-width: 767px) {
+      .logo {
+        height: 60px !important;
+        top: 0.2px !important;
+        right: 5px !important;
+      }
       .button-container {
         top: 50%;
         left: 50%;
@@ -129,17 +134,34 @@
         padding: 0.75rem 1.5rem;
       }
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .logo {
+        height: 100px !important;
+        right: 15px !important;
+        top: 5px !important;
+      }
+      .button-container {
+        top: 16px;
+        left: 8px;
+      }
+      .enter-button {
+        font-size: 1.25rem;
+        padding: 1rem 3rem;
+      }
+    }
+    @media (min-width: 1025px) {
+      .logo {
+        height: 160px;
+        right: 20px;
+        top: -15px;
+      }
+    }
   </style>
 </head>
 <body>
   <!-- Logo -->
   <img src="imagens/logo.png" alt="American View Logo" class="logo h-32 md:h-64">
   
-  <!-- Título Be Your Hero -->
-  <div class="absolute top-24 md:top-56 left-1/2 transform -translate-x-1/2 z-10 text-center">
-    <h1 class="neo-sans-title text-6xl md:text-9xl text-[#1D3C6F] whitespace-nowrap">Be Your Hero</h1>
-  </div>
-
   <!-- Botão de Entrada -->
   <div class="button-container absolute top-8 left-20 md:top-16 md:left-8">
     <a href="laboratorio.html" class="enter-button text-white font-bold rounded-full text-xs md:text-xl px-3 py-1.5 md:px-8 md:py-4">
@@ -152,4 +174,4 @@
     <img src="imagens/capa.png" alt="Be Your Hero" class="cover-image">
   </div>
 </body>
-</html>  
+</html> 
